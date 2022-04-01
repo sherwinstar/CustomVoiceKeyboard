@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48E3CCB827F710470048CAB7 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CCB727F710470048CAB7 /* KeyboardViewController.m */; };
+		48E3CCBC27F710470048CAB7 /* VoiceKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48E3CCB427F710470048CAB7 /* VoiceKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		48E3CD1627F7394A0048CAB7 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD1427F7394A0048CAB7 /* KeyboardView.m */; };
+		855C96792769A41A0085853B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C96782769A41A0085853B /* AppDelegate.m */; };
+		855C967C2769A41A0085853B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C967B2769A41A0085853B /* SceneDelegate.m */; };
+		855C967F2769A41A0085853B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C967E2769A41A0085853B /* ViewController.m */; };
+		855C96822769A41B0085853B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855C96802769A41B0085853B /* Main.storyboard */; };
+		855C96842769A41E0085853B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 855C96832769A41E0085853B /* Assets.xcassets */; };
+		855C96872769A41E0085853B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855C96852769A41E0085853B /* LaunchScreen.storyboard */; };
+		855C968A2769A41E0085853B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C96892769A41E0085853B /* main.m */; };
+		855C96942769A41E0085853B /* UnivasalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C96932769A41E0085853B /* UnivasalTests.m */; };
+		855C969E2769A41E0085853B /* UnivasalUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C969D2769A41E0085853B /* UnivasalUITests.m */; };
+		855C96A02769A41E0085853B /* UnivasalUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C969F2769A41E0085853B /* UnivasalUITestsLaunchTests.m */; };
+		855C96F32769A7EC0085853B /* UIColor+HXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C96F12769A7EC0085853B /* UIColor+HXExtension.m */; };
+		85622D3327F4450300C6781F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D3227F4450300C6781F /* Player.m */; };
+		85622D3627F53ABB00C6781F /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D3527F53ABB00C6781F /* NetManager.m */; };
+		85622D4427F577EA00C6781F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D3927F577EA00C6781F /* FMDatabaseQueue.m */; };
+		85622D4527F577EA00C6781F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D3C27F577EA00C6781F /* FMDatabaseAdditions.m */; };
+		85622D4627F577EA00C6781F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D3D27F577EA00C6781F /* FMDatabase.m */; };
+		85622D4727F577EA00C6781F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D4127F577EA00C6781F /* FMDatabasePool.m */; };
+		85622D4827F577EA00C6781F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D4227F577EA00C6781F /* FMResultSet.m */; };
+		85622D4C27F578AE00C6781F /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D4B27F578AE00C6781F /* Database.m */; };
+		85622D5027F57BD500C6781F /* Vehicle_DICT (1).db in Resources */ = {isa = PBXBuildFile; fileRef = 85622D4F27F57BD500C6781F /* Vehicle_DICT (1).db */; };
+		85622D5827F5930C00C6781F /* voice_app.db in Resources */ = {isa = PBXBuildFile; fileRef = 85622D5727F5930C00C6781F /* voice_app.db */; };
+		85D74A1627F19CF000C000B9 /* UIView+YXHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D74A1527F19CF000C000B9 /* UIView+YXHelp.m */; };
+		85D74A1927F19D2000C000B9 /* UIView+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D74A1727F19D2000C000B9 /* UIView+YX.m */; };
+		85D74A1F27F1AE0A00C000B9 /* KeyboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D74A1E27F1AE0A00C000B9 /* KeyboardCell.m */; };
+		85D74A2227F1B40500C000B9 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D74A2127F1B40500C000B9 /* LeftCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48E3CCBA27F710470048CAB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 855C966C2769A41A0085853B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48E3CCB327F710470048CAB7;
+			remoteInfo = VoiceKeyboard;
+		};
+		855C96902769A41E0085853B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 855C966C2769A41A0085853B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 855C96732769A41A0085853B;
+			remoteInfo = Univasal;
+		};
+		855C969A2769A41E0085853B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 855C966C2769A41A0085853B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 855C96732769A41A0085853B;
+			remoteInfo = Univasal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48E3CCBD27F710470048CAB7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				48E3CCBC27F710470048CAB7 /* VoiceKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		48E3CCB427F710470048CAB7 /* VoiceKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VoiceKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E3CCB627F710470048CAB7 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		48E3CCB727F710470048CAB7 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		48E3CCB927F710470048CAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E3CD1427F7394A0048CAB7 /* KeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
+		48E3CD1527F7394A0048CAB7 /* KeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
+		855C96742769A41A0085853B /* Univasal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Univasal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		855C96772769A41A0085853B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		855C96782769A41A0085853B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		855C967A2769A41A0085853B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		855C967B2769A41A0085853B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		855C967D2769A41A0085853B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		855C967E2769A41A0085853B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		855C96812769A41B0085853B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		855C96832769A41E0085853B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		855C96862769A41E0085853B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		855C96882769A41E0085853B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		855C96892769A41E0085853B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		855C968F2769A41E0085853B /* UnivasalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnivasalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		855C96932769A41E0085853B /* UnivasalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnivasalTests.m; sourceTree = "<group>"; };
+		855C96992769A41E0085853B /* UnivasalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnivasalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		855C969D2769A41E0085853B /* UnivasalUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnivasalUITests.m; sourceTree = "<group>"; };
+		855C969F2769A41E0085853B /* UnivasalUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnivasalUITestsLaunchTests.m; sourceTree = "<group>"; };
+		855C96EF2769A7EC0085853B /* UIColor+HXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HXExtension.h"; sourceTree = "<group>"; };
+		855C96F02769A7EC0085853B /* XYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYColor.h; sourceTree = "<group>"; };
+		855C96F12769A7EC0085853B /* UIColor+HXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HXExtension.m"; sourceTree = "<group>"; };
+		855C96F22769A7EC0085853B /* PrefixHeader_Txy.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_Txy.pch; sourceTree = "<group>"; };
+		85622D3127F4450300C6781F /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		85622D3227F4450300C6781F /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		85622D3427F53ABB00C6781F /* NetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		85622D3527F53ABB00C6781F /* NetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
+		85622D3827F577EA00C6781F /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		85622D3927F577EA00C6781F /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		85622D3A27F577EA00C6781F /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		85622D3B27F577EA00C6781F /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		85622D3C27F577EA00C6781F /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		85622D3D27F577EA00C6781F /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		85622D3E27F577EA00C6781F /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		85622D3F27F577EA00C6781F /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		85622D4027F577EA00C6781F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		85622D4127F577EA00C6781F /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		85622D4227F577EA00C6781F /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		85622D4A27F578AE00C6781F /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		85622D4B27F578AE00C6781F /* Database.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		85622D4F27F57BD500C6781F /* Vehicle_DICT (1).db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vehicle_DICT (1).db"; sourceTree = "<group>"; };
+		85622D5727F5930C00C6781F /* voice_app.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = voice_app.db; sourceTree = "<group>"; };
+		85D74A1427F19CF000C000B9 /* UIView+YXHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YXHelp.h"; sourceTree = "<group>"; };
+		85D74A1527F19CF000C000B9 /* UIView+YXHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YXHelp.m"; sourceTree = "<group>"; };
+		85D74A1727F19D2000C000B9 /* UIView+YX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YX.m"; sourceTree = "<group>"; };
+		85D74A1827F19D2000C000B9 /* UIView+YX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YX.h"; sourceTree = "<group>"; };
+		85D74A1D27F1AE0A00C000B9 /* KeyboardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardCell.h; sourceTree = "<group>"; };
+		85D74A1E27F1AE0A00C000B9 /* KeyboardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardCell.m; sourceTree = "<group>"; };
+		85D74A2027F1B40500C000B9 /* LeftCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftCell.h; sourceTree = "<group>"; };
+		85D74A2127F1B40500C000B9 /* LeftCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48E3CCB127F710470048CAB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855C96712769A41A0085853B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855C968C2769A41E0085853B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855C96962769A41E0085853B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48E3CCB527F710470048CAB7 /* VoiceKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				48E3CCB627F710470048CAB7 /* KeyboardViewController.h */,
+				48E3CCB727F710470048CAB7 /* KeyboardViewController.m */,
+				48E3CCB927F710470048CAB7 /* Info.plist */,
+			);
+			path = VoiceKeyboard;
+			sourceTree = "<group>";
+		};
+		855C966B2769A41A0085853B = {
+			isa = PBXGroup;
+			children = (
+				855C96762769A41A0085853B /* Univasal */,
+				855C96922769A41E0085853B /* UnivasalTests */,
+				855C969C2769A41E0085853B /* UnivasalUITests */,
+				48E3CCB527F710470048CAB7 /* VoiceKeyboard */,
+				855C96752769A41A0085853B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		855C96752769A41A0085853B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				855C96742769A41A0085853B /* Univasal.app */,
+				855C968F2769A41E0085853B /* UnivasalTests.xctest */,
+				855C96992769A41E0085853B /* UnivasalUITests.xctest */,
+				48E3CCB427F710470048CAB7 /* VoiceKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		855C96762769A41A0085853B /* Univasal */ = {
+			isa = PBXGroup;
+			children = (
+				85622D4F27F57BD500C6781F /* Vehicle_DICT (1).db */,
+				85622D5727F5930C00C6781F /* voice_app.db */,
+				85622D3727F577EA00C6781F /* fmdb */,
+				855C96ED2769A7EC0085853B /* CustomTool */,
+				855C96772769A41A0085853B /* AppDelegate.h */,
+				855C96782769A41A0085853B /* AppDelegate.m */,
+				855C967A2769A41A0085853B /* SceneDelegate.h */,
+				855C967B2769A41A0085853B /* SceneDelegate.m */,
+				855C967D2769A41A0085853B /* ViewController.h */,
+				855C967E2769A41A0085853B /* ViewController.m */,
+				48E3CD1527F7394A0048CAB7 /* KeyboardView.h */,
+				48E3CD1427F7394A0048CAB7 /* KeyboardView.m */,
+				85D74A1D27F1AE0A00C000B9 /* KeyboardCell.h */,
+				85D74A1E27F1AE0A00C000B9 /* KeyboardCell.m */,
+				85622D3127F4450300C6781F /* Player.h */,
+				85622D3227F4450300C6781F /* Player.m */,
+				85622D3427F53ABB00C6781F /* NetManager.h */,
+				85622D3527F53ABB00C6781F /* NetManager.m */,
+				85622D4A27F578AE00C6781F /* Database.h */,
+				85622D4B27F578AE00C6781F /* Database.m */,
+				85D74A2027F1B40500C000B9 /* LeftCell.h */,
+				85D74A2127F1B40500C000B9 /* LeftCell.m */,
+				855C96802769A41B0085853B /* Main.storyboard */,
+				855C96832769A41E0085853B /* Assets.xcassets */,
+				855C96852769A41E0085853B /* LaunchScreen.storyboard */,
+				855C96882769A41E0085853B /* Info.plist */,
+				855C96892769A41E0085853B /* main.m */,
+			);
+			path = Univasal;
+			sourceTree = "<group>";
+		};
+		855C96922769A41E0085853B /* UnivasalTests */ = {
+			isa = PBXGroup;
+			children = (
+				855C96932769A41E0085853B /* UnivasalTests.m */,
+			);
+			path = UnivasalTests;
+			sourceTree = "<group>";
+		};
+		855C969C2769A41E0085853B /* UnivasalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				855C969D2769A41E0085853B /* UnivasalUITests.m */,
+				855C969F2769A41E0085853B /* UnivasalUITestsLaunchTests.m */,
+			);
+			path = UnivasalUITests;
+			sourceTree = "<group>";
+		};
+		855C96ED2769A7EC0085853B /* CustomTool */ = {
+			isa = PBXGroup;
+			children = (
+				85D74A1827F19D2000C000B9 /* UIView+YX.h */,
+				85D74A1727F19D2000C000B9 /* UIView+YX.m */,
+				85D74A1427F19CF000C000B9 /* UIView+YXHelp.h */,
+				85D74A1527F19CF000C000B9 /* UIView+YXHelp.m */,
+				855C96F42769AE880085853B /* Font */,
+				855C96EE2769A7EC0085853B /* Color */,
+				855C96F22769A7EC0085853B /* PrefixHeader_Txy.pch */,
+			);
+			path = CustomTool;
+			sourceTree = "<group>";
+		};
+		855C96EE2769A7EC0085853B /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				855C96F02769A7EC0085853B /* XYColor.h */,
+				855C96EF2769A7EC0085853B /* UIColor+HXExtension.h */,
+				855C96F12769A7EC0085853B /* UIColor+HXExtension.m */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		855C96F42769AE880085853B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		85622D3727F577EA00C6781F /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				85622D3827F577EA00C6781F /* FMDatabase.h */,
+				85622D3927F577EA00C6781F /* FMDatabaseQueue.m */,
+				85622D3A27F577EA00C6781F /* FMResultSet.h */,
+				85622D3B27F577EA00C6781F /* FMDatabasePool.h */,
+				85622D3C27F577EA00C6781F /* FMDatabaseAdditions.m */,
+				85622D3D27F577EA00C6781F /* FMDatabase.m */,
+				85622D3E27F577EA00C6781F /* FMDatabaseQueue.h */,
+				85622D3F27F577EA00C6781F /* FMDB.h */,
+				85622D4027F577EA00C6781F /* FMDatabaseAdditions.h */,
+				85622D4127F577EA00C6781F /* FMDatabasePool.m */,
+				85622D4227F577EA00C6781F /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48E3CCB327F710470048CAB7 /* VoiceKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E3CCC027F710470048CAB7 /* Build configuration list for PBXNativeTarget "VoiceKeyboard" */;
+			buildPhases = (
+				48E3CCB027F710470048CAB7 /* Sources */,
+				48E3CCB127F710470048CAB7 /* Frameworks */,
+				48E3CCB227F710470048CAB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceKeyboard;
+			productName = VoiceKeyboard;
+			productReference = 48E3CCB427F710470048CAB7 /* VoiceKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		855C96732769A41A0085853B /* Univasal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855C96A32769A41E0085853B /* Build configuration list for PBXNativeTarget "Univasal" */;
+			buildPhases = (
+				855C96702769A41A0085853B /* Sources */,
+				855C96712769A41A0085853B /* Frameworks */,
+				855C96722769A41A0085853B /* Resources */,
+				48E3CCBD27F710470048CAB7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48E3CCBB27F710470048CAB7 /* PBXTargetDependency */,
+			);
+			name = Univasal;
+			productName = Univasal;
+			productReference = 855C96742769A41A0085853B /* Univasal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		855C968E2769A41E0085853B /* UnivasalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855C96A62769A41E0085853B /* Build configuration list for PBXNativeTarget "UnivasalTests" */;
+			buildPhases = (
+				855C968B2769A41E0085853B /* Sources */,
+				855C968C2769A41E0085853B /* Frameworks */,
+				855C968D2769A41E0085853B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				855C96912769A41E0085853B /* PBXTargetDependency */,
+			);
+			name = UnivasalTests;
+			productName = UnivasalTests;
+			productReference = 855C968F2769A41E0085853B /* UnivasalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		855C96982769A41E0085853B /* UnivasalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855C96A92769A41E0085853B /* Build configuration list for PBXNativeTarget "UnivasalUITests" */;
+			buildPhases = (
+				855C96952769A41E0085853B /* Sources */,
+				855C96962769A41E0085853B /* Frameworks */,
+				855C96972769A41E0085853B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				855C969B2769A41E0085853B /* PBXTargetDependency */,
+			);
+			name = UnivasalUITests;
+			productName = UnivasalUITests;
+			productReference = 855C96992769A41E0085853B /* UnivasalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		855C966C2769A41A0085853B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					48E3CCB327F710470048CAB7 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					855C96732769A41A0085853B = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					855C968E2769A41E0085853B = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 855C96732769A41A0085853B;
+					};
+					855C96982769A41E0085853B = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 855C96732769A41A0085853B;
+					};
+				};
+			};
+			buildConfigurationList = 855C966F2769A41A0085853B /* Build configuration list for PBXProject "Univasal" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 855C966B2769A41A0085853B;
+			productRefGroup = 855C96752769A41A0085853B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				855C96732769A41A0085853B /* Univasal */,
+				855C968E2769A41E0085853B /* UnivasalTests */,
+				855C96982769A41E0085853B /* UnivasalUITests */,
+				48E3CCB327F710470048CAB7 /* VoiceKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48E3CCB227F710470048CAB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855C96722769A41A0085853B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85622D5027F57BD500C6781F /* Vehicle_DICT (1).db in Resources */,
+				855C96872769A41E0085853B /* LaunchScreen.storyboard in Resources */,
+				85622D5827F5930C00C6781F /* voice_app.db in Resources */,
+				855C96842769A41E0085853B /* Assets.xcassets in Resources */,
+				855C96822769A41B0085853B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855C968D2769A41E0085853B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855C96972769A41E0085853B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48E3CCB027F710470048CAB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E3CCB827F710470048CAB7 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855C96702769A41A0085853B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D74A2227F1B40500C000B9 /* LeftCell.m in Sources */,
+				85622D4627F577EA00C6781F /* FMDatabase.m in Sources */,
+				855C967F2769A41A0085853B /* ViewController.m in Sources */,
+				85622D4727F577EA00C6781F /* FMDatabasePool.m in Sources */,
+				85D74A1627F19CF000C000B9 /* UIView+YXHelp.m in Sources */,
+				85622D3627F53ABB00C6781F /* NetManager.m in Sources */,
+				85622D4C27F578AE00C6781F /* Database.m in Sources */,
+				855C96792769A41A0085853B /* AppDelegate.m in Sources */,
+				85622D4427F577EA00C6781F /* FMDatabaseQueue.m in Sources */,
+				855C96F32769A7EC0085853B /* UIColor+HXExtension.m in Sources */,
+				855C968A2769A41E0085853B /* main.m in Sources */,
+				85D74A1927F19D2000C000B9 /* UIView+YX.m in Sources */,
+				85622D3327F4450300C6781F /* Player.m in Sources */,
+				85622D4827F577EA00C6781F /* FMResultSet.m in Sources */,
+				85D74A1F27F1AE0A00C000B9 /* KeyboardCell.m in Sources */,
+				48E3CD1627F7394A0048CAB7 /* KeyboardView.m in Sources */,
+				855C967C2769A41A0085853B /* SceneDelegate.m in Sources */,
+				85622D4527F577EA00C6781F /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855C968B2769A41E0085853B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855C96942769A41E0085853B /* UnivasalTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855C96952769A41E0085853B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855C969E2769A41E0085853B /* UnivasalUITests.m in Sources */,
+				855C96A02769A41E0085853B /* UnivasalUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48E3CCBB27F710470048CAB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48E3CCB327F710470048CAB7 /* VoiceKeyboard */;
+			targetProxy = 48E3CCBA27F710470048CAB7 /* PBXContainerItemProxy */;
+		};
+		855C96912769A41E0085853B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 855C96732769A41A0085853B /* Univasal */;
+			targetProxy = 855C96902769A41E0085853B /* PBXContainerItemProxy */;
+		};
+		855C969B2769A41E0085853B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 855C96732769A41A0085853B /* Univasal */;
+			targetProxy = 855C969A2769A41E0085853B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		855C96802769A41B0085853B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				855C96812769A41B0085853B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		855C96852769A41E0085853B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				855C96862769A41E0085853B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48E3CCBE27F710470048CAB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SQLS7LRC9J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VoiceKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = txy.com.Univasal.VoiceKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48E3CCBF27F710470048CAB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SQLS7LRC9J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoiceKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VoiceKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = txy.com.Univasal.VoiceKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		855C96A12769A41E0085853B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		855C96A22769A41E0085853B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		855C96A42769A41E0085853B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SQLS7LRC9J;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Univasal/CustomTool/PrefixHeader_Txy.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Univasal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = txy.com.Univasal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		855C96A52769A41E0085853B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SQLS7LRC9J;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Univasal/CustomTool/PrefixHeader_Txy.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Univasal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = txy.com.Univasal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		855C96A72769A41E0085853B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45CBFQL7FJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = txy.com.UnivasalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Univasal.app/Univasal";
+			};
+			name = Debug;
+		};
+		855C96A82769A41E0085853B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45CBFQL7FJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = txy.com.UnivasalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Univasal.app/Univasal";
+			};
+			name = Release;
+		};
+		855C96AA2769A41E0085853B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45CBFQL7FJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = txy.com.UnivasalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Univasal;
+			};
+			name = Debug;
+		};
+		855C96AB2769A41E0085853B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45CBFQL7FJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = txy.com.UnivasalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Univasal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48E3CCC027F710470048CAB7 /* Build configuration list for PBXNativeTarget "VoiceKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E3CCBE27F710470048CAB7 /* Debug */,
+				48E3CCBF27F710470048CAB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855C966F2769A41A0085853B /* Build configuration list for PBXProject "Univasal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855C96A12769A41E0085853B /* Debug */,
+				855C96A22769A41E0085853B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855C96A32769A41E0085853B /* Build configuration list for PBXNativeTarget "Univasal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855C96A42769A41E0085853B /* Debug */,
+				855C96A52769A41E0085853B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855C96A62769A41E0085853B /* Build configuration list for PBXNativeTarget "UnivasalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855C96A72769A41E0085853B /* Debug */,
+				855C96A82769A41E0085853B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855C96A92769A41E0085853B /* Build configuration list for PBXNativeTarget "UnivasalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855C96AA2769A41E0085853B /* Debug */,
+				855C96AB2769A41E0085853B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 855C966C2769A41A0085853B /* Project object */;
+}
