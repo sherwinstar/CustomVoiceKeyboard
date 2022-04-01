@@ -6,7 +6,8 @@
 //
 
 #import "KeyboardViewController.h"
-//#import "KeyboardView.h"
+#import "KeyboardView.h"
+#import "UIView+AutoLayout.h"
 
 @interface KeyboardViewController ()
 @property (nonatomic, strong) UIButton *nextKeyboardButton;
@@ -22,8 +23,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    KeyboardView* keyview=[KeyboardView shared];
-//    [self.view addSubview:keyview];
+    
+    self.view.backgroundColor = [UIColor blackColor];
+    KeyboardView* keyview = [KeyboardView shared];
+    [keyview show];
+    [self.view addSubview:keyview];
+    [keyview autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:0];
+    [keyview autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:0];
+    [keyview autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:0];
+    [keyview autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:0];
+    
+    
 }
 
 - (void)viewWillLayoutSubviews

@@ -23,6 +23,8 @@
     [self.vi addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(run)]];
     [self.view addSubview:self.vi];
     [self.view addSubview:self.textField];
+    self.textField.text = @"系统键盘";
+    self.textField.backgroundColor = [UIColor redColor];
   //  [self networkchangeIp];
     // Do any additional setup after loading the view.
 }
@@ -49,7 +51,7 @@
 
 - (UITextField *)textField {
     if (!_textField) {
-        _textField = [[UITextField alloc] initWithFrame:CGRectMake(150, 350, 100, 44)];
+        _textField = [[UITextField alloc] initWithFrame:CGRectMake(120, 350, 150, 44)];
     }
     return _textField;
 }

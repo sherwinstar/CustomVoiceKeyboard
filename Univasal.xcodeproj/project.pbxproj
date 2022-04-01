@@ -9,7 +9,39 @@
 /* Begin PBXBuildFile section */
 		48E3CCB827F710470048CAB7 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CCB727F710470048CAB7 /* KeyboardViewController.m */; };
 		48E3CCBC27F710470048CAB7 /* VoiceKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48E3CCB427F710470048CAB7 /* VoiceKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		48E3CD1627F7394A0048CAB7 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD1427F7394A0048CAB7 /* KeyboardView.m */; };
+		48E3CD9227F7469F0048CAB7 /* voice_app.db in Resources */ = {isa = PBXBuildFile; fileRef = 48E3CD6F27F7469F0048CAB7 /* voice_app.db */; };
+		48E3CD9327F7469F0048CAB7 /* voice_app.db in Resources */ = {isa = PBXBuildFile; fileRef = 48E3CD6F27F7469F0048CAB7 /* voice_app.db */; };
+		48E3CD9427F7469F0048CAB7 /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7027F7469F0048CAB7 /* NetManager.m */; };
+		48E3CD9527F7469F0048CAB7 /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7027F7469F0048CAB7 /* NetManager.m */; };
+		48E3CD9627F7469F0048CAB7 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7127F7469F0048CAB7 /* Database.m */; };
+		48E3CD9727F7469F0048CAB7 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7127F7469F0048CAB7 /* Database.m */; };
+		48E3CD9827F7469F0048CAB7 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7227F7469F0048CAB7 /* LeftCell.m */; };
+		48E3CD9927F7469F0048CAB7 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7227F7469F0048CAB7 /* LeftCell.m */; };
+		48E3CD9A27F7469F0048CAB7 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7327F7469F0048CAB7 /* KeyboardView.m */; };
+		48E3CD9B27F7469F0048CAB7 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7327F7469F0048CAB7 /* KeyboardView.m */; };
+		48E3CD9C27F7469F0048CAB7 /* KeyboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7527F7469F0048CAB7 /* KeyboardCell.m */; };
+		48E3CD9D27F7469F0048CAB7 /* KeyboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7527F7469F0048CAB7 /* KeyboardCell.m */; };
+		48E3CD9E27F7469F0048CAB7 /* Vehicle_DICT (1).db in Resources */ = {isa = PBXBuildFile; fileRef = 48E3CD7627F7469F0048CAB7 /* Vehicle_DICT (1).db */; };
+		48E3CD9F27F7469F0048CAB7 /* Vehicle_DICT (1).db in Resources */ = {isa = PBXBuildFile; fileRef = 48E3CD7627F7469F0048CAB7 /* Vehicle_DICT (1).db */; };
+		48E3CDA027F7469F0048CAB7 /* UIView+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7927F7469F0048CAB7 /* UIView+YX.m */; };
+		48E3CDA127F7469F0048CAB7 /* UIView+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7927F7469F0048CAB7 /* UIView+YX.m */; };
+		48E3CDA227F7469F0048CAB7 /* UIColor+HXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7D27F7469F0048CAB7 /* UIColor+HXExtension.m */; };
+		48E3CDA327F7469F0048CAB7 /* UIColor+HXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7D27F7469F0048CAB7 /* UIColor+HXExtension.m */; };
+		48E3CDA427F7469F0048CAB7 /* UIView+YXHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7F27F7469F0048CAB7 /* UIView+YXHelp.m */; };
+		48E3CDA527F7469F0048CAB7 /* UIView+YXHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD7F27F7469F0048CAB7 /* UIView+YXHelp.m */; };
+		48E3CDA627F7469F0048CAB7 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD8527F7469F0048CAB7 /* FMDatabaseQueue.m */; };
+		48E3CDA727F7469F0048CAB7 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD8527F7469F0048CAB7 /* FMDatabaseQueue.m */; };
+		48E3CDA827F7469F0048CAB7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD8827F7469F0048CAB7 /* FMDatabaseAdditions.m */; };
+		48E3CDA927F7469F0048CAB7 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD8827F7469F0048CAB7 /* FMDatabaseAdditions.m */; };
+		48E3CDAA27F7469F0048CAB7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD8927F7469F0048CAB7 /* FMDatabase.m */; };
+		48E3CDAB27F7469F0048CAB7 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD8927F7469F0048CAB7 /* FMDatabase.m */; };
+		48E3CDAC27F7469F0048CAB7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD8D27F7469F0048CAB7 /* FMDatabasePool.m */; };
+		48E3CDAD27F7469F0048CAB7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD8D27F7469F0048CAB7 /* FMDatabasePool.m */; };
+		48E3CDAE27F7469F0048CAB7 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD8E27F7469F0048CAB7 /* FMResultSet.m */; };
+		48E3CDAF27F7469F0048CAB7 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD8E27F7469F0048CAB7 /* FMResultSet.m */; };
+		48E3CDB027F7469F0048CAB7 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD9127F7469F0048CAB7 /* Player.m */; };
+		48E3CDB127F7469F0048CAB7 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD9127F7469F0048CAB7 /* Player.m */; };
+		48E3CDB627F748A90048CAB7 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CDB527F748A80048CAB7 /* UIView+AutoLayout.m */; };
 		855C96792769A41A0085853B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C96782769A41A0085853B /* AppDelegate.m */; };
 		855C967C2769A41A0085853B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C967B2769A41A0085853B /* SceneDelegate.m */; };
 		855C967F2769A41A0085853B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C967E2769A41A0085853B /* ViewController.m */; };
@@ -20,21 +52,6 @@
 		855C96942769A41E0085853B /* UnivasalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C96932769A41E0085853B /* UnivasalTests.m */; };
 		855C969E2769A41E0085853B /* UnivasalUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C969D2769A41E0085853B /* UnivasalUITests.m */; };
 		855C96A02769A41E0085853B /* UnivasalUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C969F2769A41E0085853B /* UnivasalUITestsLaunchTests.m */; };
-		855C96F32769A7EC0085853B /* UIColor+HXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C96F12769A7EC0085853B /* UIColor+HXExtension.m */; };
-		85622D3327F4450300C6781F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D3227F4450300C6781F /* Player.m */; };
-		85622D3627F53ABB00C6781F /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D3527F53ABB00C6781F /* NetManager.m */; };
-		85622D4427F577EA00C6781F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D3927F577EA00C6781F /* FMDatabaseQueue.m */; };
-		85622D4527F577EA00C6781F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D3C27F577EA00C6781F /* FMDatabaseAdditions.m */; };
-		85622D4627F577EA00C6781F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D3D27F577EA00C6781F /* FMDatabase.m */; };
-		85622D4727F577EA00C6781F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D4127F577EA00C6781F /* FMDatabasePool.m */; };
-		85622D4827F577EA00C6781F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D4227F577EA00C6781F /* FMResultSet.m */; };
-		85622D4C27F578AE00C6781F /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 85622D4B27F578AE00C6781F /* Database.m */; };
-		85622D5027F57BD500C6781F /* Vehicle_DICT (1).db in Resources */ = {isa = PBXBuildFile; fileRef = 85622D4F27F57BD500C6781F /* Vehicle_DICT (1).db */; };
-		85622D5827F5930C00C6781F /* voice_app.db in Resources */ = {isa = PBXBuildFile; fileRef = 85622D5727F5930C00C6781F /* voice_app.db */; };
-		85D74A1627F19CF000C000B9 /* UIView+YXHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D74A1527F19CF000C000B9 /* UIView+YXHelp.m */; };
-		85D74A1927F19D2000C000B9 /* UIView+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D74A1727F19D2000C000B9 /* UIView+YX.m */; };
-		85D74A1F27F1AE0A00C000B9 /* KeyboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D74A1E27F1AE0A00C000B9 /* KeyboardCell.m */; };
-		85D74A2227F1B40500C000B9 /* LeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D74A2127F1B40500C000B9 /* LeftCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +97,42 @@
 		48E3CCB627F710470048CAB7 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		48E3CCB727F710470048CAB7 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 		48E3CCB927F710470048CAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48E3CD1427F7394A0048CAB7 /* KeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
-		48E3CD1527F7394A0048CAB7 /* KeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
+		48E3CD6F27F7469F0048CAB7 /* voice_app.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = voice_app.db; sourceTree = "<group>"; };
+		48E3CD7027F7469F0048CAB7 /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
+		48E3CD7127F7469F0048CAB7 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		48E3CD7227F7469F0048CAB7 /* LeftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftCell.m; sourceTree = "<group>"; };
+		48E3CD7327F7469F0048CAB7 /* KeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
+		48E3CD7427F7469F0048CAB7 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		48E3CD7527F7469F0048CAB7 /* KeyboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardCell.m; sourceTree = "<group>"; };
+		48E3CD7627F7469F0048CAB7 /* Vehicle_DICT (1).db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vehicle_DICT (1).db"; sourceTree = "<group>"; };
+		48E3CD7827F7469F0048CAB7 /* UIView+YXHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YXHelp.h"; sourceTree = "<group>"; };
+		48E3CD7927F7469F0048CAB7 /* UIView+YX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YX.m"; sourceTree = "<group>"; };
+		48E3CD7B27F7469F0048CAB7 /* UIColor+HXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HXExtension.h"; sourceTree = "<group>"; };
+		48E3CD7C27F7469F0048CAB7 /* XYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYColor.h; sourceTree = "<group>"; };
+		48E3CD7D27F7469F0048CAB7 /* UIColor+HXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HXExtension.m"; sourceTree = "<group>"; };
+		48E3CD7E27F7469F0048CAB7 /* UIView+YX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YX.h"; sourceTree = "<group>"; };
+		48E3CD7F27F7469F0048CAB7 /* UIView+YXHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YXHelp.m"; sourceTree = "<group>"; };
+		48E3CD8027F7469F0048CAB7 /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		48E3CD8127F7469F0048CAB7 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		48E3CD8227F7469F0048CAB7 /* KeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
+		48E3CD8427F7469F0048CAB7 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		48E3CD8527F7469F0048CAB7 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		48E3CD8627F7469F0048CAB7 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		48E3CD8727F7469F0048CAB7 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		48E3CD8827F7469F0048CAB7 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		48E3CD8927F7469F0048CAB7 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		48E3CD8A27F7469F0048CAB7 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		48E3CD8B27F7469F0048CAB7 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		48E3CD8C27F7469F0048CAB7 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		48E3CD8D27F7469F0048CAB7 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		48E3CD8E27F7469F0048CAB7 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		48E3CD8F27F7469F0048CAB7 /* LeftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftCell.h; sourceTree = "<group>"; };
+		48E3CD9027F7469F0048CAB7 /* KeyboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardCell.h; sourceTree = "<group>"; };
+		48E3CD9127F7469F0048CAB7 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		48E3CDB227F746C20048CAB7 /* PrefixHeader_Txy.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_Txy.pch; sourceTree = "<group>"; };
+		48E3CDB327F746F30048CAB7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		48E3CDB427F748A80048CAB7 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		48E3CDB527F748A80048CAB7 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		855C96742769A41A0085853B /* Univasal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Univasal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		855C96772769A41A0085853B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		855C96782769A41A0085853B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -99,37 +150,6 @@
 		855C96992769A41E0085853B /* UnivasalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnivasalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		855C969D2769A41E0085853B /* UnivasalUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnivasalUITests.m; sourceTree = "<group>"; };
 		855C969F2769A41E0085853B /* UnivasalUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnivasalUITestsLaunchTests.m; sourceTree = "<group>"; };
-		855C96EF2769A7EC0085853B /* UIColor+HXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HXExtension.h"; sourceTree = "<group>"; };
-		855C96F02769A7EC0085853B /* XYColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYColor.h; sourceTree = "<group>"; };
-		855C96F12769A7EC0085853B /* UIColor+HXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HXExtension.m"; sourceTree = "<group>"; };
-		855C96F22769A7EC0085853B /* PrefixHeader_Txy.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_Txy.pch; sourceTree = "<group>"; };
-		85622D3127F4450300C6781F /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		85622D3227F4450300C6781F /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		85622D3427F53ABB00C6781F /* NetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
-		85622D3527F53ABB00C6781F /* NetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
-		85622D3827F577EA00C6781F /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		85622D3927F577EA00C6781F /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		85622D3A27F577EA00C6781F /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		85622D3B27F577EA00C6781F /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		85622D3C27F577EA00C6781F /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		85622D3D27F577EA00C6781F /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		85622D3E27F577EA00C6781F /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		85622D3F27F577EA00C6781F /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		85622D4027F577EA00C6781F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		85622D4127F577EA00C6781F /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		85622D4227F577EA00C6781F /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		85622D4A27F578AE00C6781F /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
-		85622D4B27F578AE00C6781F /* Database.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
-		85622D4F27F57BD500C6781F /* Vehicle_DICT (1).db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vehicle_DICT (1).db"; sourceTree = "<group>"; };
-		85622D5727F5930C00C6781F /* voice_app.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = voice_app.db; sourceTree = "<group>"; };
-		85D74A1427F19CF000C000B9 /* UIView+YXHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YXHelp.h"; sourceTree = "<group>"; };
-		85D74A1527F19CF000C000B9 /* UIView+YXHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YXHelp.m"; sourceTree = "<group>"; };
-		85D74A1727F19D2000C000B9 /* UIView+YX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YX.m"; sourceTree = "<group>"; };
-		85D74A1827F19D2000C000B9 /* UIView+YX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YX.h"; sourceTree = "<group>"; };
-		85D74A1D27F1AE0A00C000B9 /* KeyboardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardCell.h; sourceTree = "<group>"; };
-		85D74A1E27F1AE0A00C000B9 /* KeyboardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardCell.m; sourceTree = "<group>"; };
-		85D74A2027F1B40500C000B9 /* LeftCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftCell.h; sourceTree = "<group>"; };
-		85D74A2127F1B40500C000B9 /* LeftCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,11 +187,79 @@
 		48E3CCB527F710470048CAB7 /* VoiceKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				48E3CD6E27F7469F0048CAB7 /* Keyboard */,
 				48E3CCB627F710470048CAB7 /* KeyboardViewController.h */,
 				48E3CCB727F710470048CAB7 /* KeyboardViewController.m */,
+				48E3CDB427F748A80048CAB7 /* UIView+AutoLayout.h */,
+				48E3CDB527F748A80048CAB7 /* UIView+AutoLayout.m */,
+				48E3CDB327F746F30048CAB7 /* Constants.h */,
 				48E3CCB927F710470048CAB7 /* Info.plist */,
 			);
 			path = VoiceKeyboard;
+			sourceTree = "<group>";
+		};
+		48E3CD6E27F7469F0048CAB7 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				48E3CD6F27F7469F0048CAB7 /* voice_app.db */,
+				48E3CD7027F7469F0048CAB7 /* NetManager.m */,
+				48E3CD7127F7469F0048CAB7 /* Database.m */,
+				48E3CD7227F7469F0048CAB7 /* LeftCell.m */,
+				48E3CD7327F7469F0048CAB7 /* KeyboardView.m */,
+				48E3CD7427F7469F0048CAB7 /* Player.h */,
+				48E3CD7527F7469F0048CAB7 /* KeyboardCell.m */,
+				48E3CD7627F7469F0048CAB7 /* Vehicle_DICT (1).db */,
+				48E3CD7727F7469F0048CAB7 /* CustomTool */,
+				48E3CD8027F7469F0048CAB7 /* NetManager.h */,
+				48E3CD8127F7469F0048CAB7 /* Database.h */,
+				48E3CD8227F7469F0048CAB7 /* KeyboardView.h */,
+				48E3CD8327F7469F0048CAB7 /* fmdb */,
+				48E3CD8F27F7469F0048CAB7 /* LeftCell.h */,
+				48E3CD9027F7469F0048CAB7 /* KeyboardCell.h */,
+				48E3CD9127F7469F0048CAB7 /* Player.m */,
+			);
+			name = Keyboard;
+			path = Univasal/Keyboard;
+			sourceTree = SOURCE_ROOT;
+		};
+		48E3CD7727F7469F0048CAB7 /* CustomTool */ = {
+			isa = PBXGroup;
+			children = (
+				48E3CD7827F7469F0048CAB7 /* UIView+YXHelp.h */,
+				48E3CD7927F7469F0048CAB7 /* UIView+YX.m */,
+				48E3CD7A27F7469F0048CAB7 /* Color */,
+				48E3CD7E27F7469F0048CAB7 /* UIView+YX.h */,
+				48E3CD7F27F7469F0048CAB7 /* UIView+YXHelp.m */,
+			);
+			path = CustomTool;
+			sourceTree = "<group>";
+		};
+		48E3CD7A27F7469F0048CAB7 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				48E3CD7B27F7469F0048CAB7 /* UIColor+HXExtension.h */,
+				48E3CD7C27F7469F0048CAB7 /* XYColor.h */,
+				48E3CD7D27F7469F0048CAB7 /* UIColor+HXExtension.m */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		48E3CD8327F7469F0048CAB7 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				48E3CD8427F7469F0048CAB7 /* FMDatabase.h */,
+				48E3CD8527F7469F0048CAB7 /* FMDatabaseQueue.m */,
+				48E3CD8627F7469F0048CAB7 /* FMResultSet.h */,
+				48E3CD8727F7469F0048CAB7 /* FMDatabasePool.h */,
+				48E3CD8827F7469F0048CAB7 /* FMDatabaseAdditions.m */,
+				48E3CD8927F7469F0048CAB7 /* FMDatabase.m */,
+				48E3CD8A27F7469F0048CAB7 /* FMDatabaseQueue.h */,
+				48E3CD8B27F7469F0048CAB7 /* FMDB.h */,
+				48E3CD8C27F7469F0048CAB7 /* FMDatabaseAdditions.h */,
+				48E3CD8D27F7469F0048CAB7 /* FMDatabasePool.m */,
+				48E3CD8E27F7469F0048CAB7 /* FMResultSet.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 		855C966B2769A41A0085853B = {
@@ -199,32 +287,17 @@
 		855C96762769A41A0085853B /* Univasal */ = {
 			isa = PBXGroup;
 			children = (
-				85622D4F27F57BD500C6781F /* Vehicle_DICT (1).db */,
-				85622D5727F5930C00C6781F /* voice_app.db */,
-				85622D3727F577EA00C6781F /* fmdb */,
-				855C96ED2769A7EC0085853B /* CustomTool */,
 				855C96772769A41A0085853B /* AppDelegate.h */,
 				855C96782769A41A0085853B /* AppDelegate.m */,
 				855C967A2769A41A0085853B /* SceneDelegate.h */,
 				855C967B2769A41A0085853B /* SceneDelegate.m */,
 				855C967D2769A41A0085853B /* ViewController.h */,
 				855C967E2769A41A0085853B /* ViewController.m */,
-				48E3CD1527F7394A0048CAB7 /* KeyboardView.h */,
-				48E3CD1427F7394A0048CAB7 /* KeyboardView.m */,
-				85D74A1D27F1AE0A00C000B9 /* KeyboardCell.h */,
-				85D74A1E27F1AE0A00C000B9 /* KeyboardCell.m */,
-				85622D3127F4450300C6781F /* Player.h */,
-				85622D3227F4450300C6781F /* Player.m */,
-				85622D3427F53ABB00C6781F /* NetManager.h */,
-				85622D3527F53ABB00C6781F /* NetManager.m */,
-				85622D4A27F578AE00C6781F /* Database.h */,
-				85622D4B27F578AE00C6781F /* Database.m */,
-				85D74A2027F1B40500C000B9 /* LeftCell.h */,
-				85D74A2127F1B40500C000B9 /* LeftCell.m */,
 				855C96802769A41B0085853B /* Main.storyboard */,
 				855C96832769A41E0085853B /* Assets.xcassets */,
 				855C96852769A41E0085853B /* LaunchScreen.storyboard */,
 				855C96882769A41E0085853B /* Info.plist */,
+				48E3CDB227F746C20048CAB7 /* PrefixHeader_Txy.pch */,
 				855C96892769A41E0085853B /* main.m */,
 			);
 			path = Univasal;
@@ -245,55 +318,6 @@
 				855C969F2769A41E0085853B /* UnivasalUITestsLaunchTests.m */,
 			);
 			path = UnivasalUITests;
-			sourceTree = "<group>";
-		};
-		855C96ED2769A7EC0085853B /* CustomTool */ = {
-			isa = PBXGroup;
-			children = (
-				85D74A1827F19D2000C000B9 /* UIView+YX.h */,
-				85D74A1727F19D2000C000B9 /* UIView+YX.m */,
-				85D74A1427F19CF000C000B9 /* UIView+YXHelp.h */,
-				85D74A1527F19CF000C000B9 /* UIView+YXHelp.m */,
-				855C96F42769AE880085853B /* Font */,
-				855C96EE2769A7EC0085853B /* Color */,
-				855C96F22769A7EC0085853B /* PrefixHeader_Txy.pch */,
-			);
-			path = CustomTool;
-			sourceTree = "<group>";
-		};
-		855C96EE2769A7EC0085853B /* Color */ = {
-			isa = PBXGroup;
-			children = (
-				855C96F02769A7EC0085853B /* XYColor.h */,
-				855C96EF2769A7EC0085853B /* UIColor+HXExtension.h */,
-				855C96F12769A7EC0085853B /* UIColor+HXExtension.m */,
-			);
-			path = Color;
-			sourceTree = "<group>";
-		};
-		855C96F42769AE880085853B /* Font */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
-		85622D3727F577EA00C6781F /* fmdb */ = {
-			isa = PBXGroup;
-			children = (
-				85622D3827F577EA00C6781F /* FMDatabase.h */,
-				85622D3927F577EA00C6781F /* FMDatabaseQueue.m */,
-				85622D3A27F577EA00C6781F /* FMResultSet.h */,
-				85622D3B27F577EA00C6781F /* FMDatabasePool.h */,
-				85622D3C27F577EA00C6781F /* FMDatabaseAdditions.m */,
-				85622D3D27F577EA00C6781F /* FMDatabase.m */,
-				85622D3E27F577EA00C6781F /* FMDatabaseQueue.h */,
-				85622D3F27F577EA00C6781F /* FMDB.h */,
-				85622D4027F577EA00C6781F /* FMDatabaseAdditions.h */,
-				85622D4127F577EA00C6781F /* FMDatabasePool.m */,
-				85622D4227F577EA00C6781F /* FMResultSet.m */,
-			);
-			path = fmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +446,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E3CD9F27F7469F0048CAB7 /* Vehicle_DICT (1).db in Resources */,
+				48E3CD9327F7469F0048CAB7 /* voice_app.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,10 +455,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85622D5027F57BD500C6781F /* Vehicle_DICT (1).db in Resources */,
 				855C96872769A41E0085853B /* LaunchScreen.storyboard in Resources */,
-				85622D5827F5930C00C6781F /* voice_app.db in Resources */,
 				855C96842769A41E0085853B /* Assets.xcassets in Resources */,
+				48E3CD9E27F7469F0048CAB7 /* Vehicle_DICT (1).db in Resources */,
+				48E3CD9227F7469F0048CAB7 /* voice_app.db in Resources */,
 				855C96822769A41B0085853B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +484,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E3CDA127F7469F0048CAB7 /* UIView+YX.m in Sources */,
+				48E3CD9D27F7469F0048CAB7 /* KeyboardCell.m in Sources */,
+				48E3CDAF27F7469F0048CAB7 /* FMResultSet.m in Sources */,
+				48E3CDAD27F7469F0048CAB7 /* FMDatabasePool.m in Sources */,
+				48E3CDB127F7469F0048CAB7 /* Player.m in Sources */,
+				48E3CD9927F7469F0048CAB7 /* LeftCell.m in Sources */,
+				48E3CDAB27F7469F0048CAB7 /* FMDatabase.m in Sources */,
 				48E3CCB827F710470048CAB7 /* KeyboardViewController.m in Sources */,
+				48E3CDA527F7469F0048CAB7 /* UIView+YXHelp.m in Sources */,
+				48E3CDB627F748A90048CAB7 /* UIView+AutoLayout.m in Sources */,
+				48E3CDA727F7469F0048CAB7 /* FMDatabaseQueue.m in Sources */,
+				48E3CD9B27F7469F0048CAB7 /* KeyboardView.m in Sources */,
+				48E3CDA927F7469F0048CAB7 /* FMDatabaseAdditions.m in Sources */,
+				48E3CDA327F7469F0048CAB7 /* UIColor+HXExtension.m in Sources */,
+				48E3CD9727F7469F0048CAB7 /* Database.m in Sources */,
+				48E3CD9527F7469F0048CAB7 /* NetManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,24 +507,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85D74A2227F1B40500C000B9 /* LeftCell.m in Sources */,
-				85622D4627F577EA00C6781F /* FMDatabase.m in Sources */,
+				48E3CD9C27F7469F0048CAB7 /* KeyboardCell.m in Sources */,
+				48E3CD9827F7469F0048CAB7 /* LeftCell.m in Sources */,
 				855C967F2769A41A0085853B /* ViewController.m in Sources */,
-				85622D4727F577EA00C6781F /* FMDatabasePool.m in Sources */,
-				85D74A1627F19CF000C000B9 /* UIView+YXHelp.m in Sources */,
-				85622D3627F53ABB00C6781F /* NetManager.m in Sources */,
-				85622D4C27F578AE00C6781F /* Database.m in Sources */,
+				48E3CDAA27F7469F0048CAB7 /* FMDatabase.m in Sources */,
+				48E3CDA027F7469F0048CAB7 /* UIView+YX.m in Sources */,
+				48E3CDA627F7469F0048CAB7 /* FMDatabaseQueue.m in Sources */,
+				48E3CDA827F7469F0048CAB7 /* FMDatabaseAdditions.m in Sources */,
+				48E3CDA427F7469F0048CAB7 /* UIView+YXHelp.m in Sources */,
+				48E3CD9427F7469F0048CAB7 /* NetManager.m in Sources */,
 				855C96792769A41A0085853B /* AppDelegate.m in Sources */,
-				85622D4427F577EA00C6781F /* FMDatabaseQueue.m in Sources */,
-				855C96F32769A7EC0085853B /* UIColor+HXExtension.m in Sources */,
 				855C968A2769A41E0085853B /* main.m in Sources */,
-				85D74A1927F19D2000C000B9 /* UIView+YX.m in Sources */,
-				85622D3327F4450300C6781F /* Player.m in Sources */,
-				85622D4827F577EA00C6781F /* FMResultSet.m in Sources */,
-				85D74A1F27F1AE0A00C000B9 /* KeyboardCell.m in Sources */,
-				48E3CD1627F7394A0048CAB7 /* KeyboardView.m in Sources */,
+				48E3CD9A27F7469F0048CAB7 /* KeyboardView.m in Sources */,
+				48E3CDA227F7469F0048CAB7 /* UIColor+HXExtension.m in Sources */,
+				48E3CDAE27F7469F0048CAB7 /* FMResultSet.m in Sources */,
+				48E3CDAC27F7469F0048CAB7 /* FMDatabasePool.m in Sources */,
+				48E3CD9627F7469F0048CAB7 /* Database.m in Sources */,
+				48E3CDB027F7469F0048CAB7 /* Player.m in Sources */,
 				855C967C2769A41A0085853B /* SceneDelegate.m in Sources */,
-				85622D4527F577EA00C6781F /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,7 +755,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SQLS7LRC9J;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Univasal/CustomTool/PrefixHeader_Txy.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Univasal/PrefixHeader_Txy.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Univasal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -742,7 +783,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SQLS7LRC9J;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Univasal/CustomTool/PrefixHeader_Txy.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Univasal/PrefixHeader_Txy.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Univasal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
