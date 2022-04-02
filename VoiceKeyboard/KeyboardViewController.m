@@ -23,8 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor blackColor];
     KeyboardView* keyview = [KeyboardView shared];
     [keyview show];
     [self.view addSubview:keyview];
@@ -32,8 +30,7 @@
     [keyview autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:0];
     [keyview autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:0];
     [keyview autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:0];
-    
-    
+    [keyview autoSetDimension:ALDimensionHeight toSize:54 + 263 + 3];
 }
 
 - (void)viewWillLayoutSubviews

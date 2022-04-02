@@ -23,6 +23,7 @@
 @property(nonatomic,strong)NSArray*zhuanji;
 @property(nonatomic,strong)NSArray* rightData;//右边文件列表
 @property(nonatomic,strong) NSString* delayurl;//存储延时播放的url;
+@property(nonatomic,assign) BOOL isPortrait;
 @end
 @implementation KeyboardView
 
@@ -182,7 +183,8 @@ static KeyboardView *_instance;
     [[Player shared]stop];
 }
 -(void)initUI{
-    leavetime=-1;
+    leavetime = -1;
+    self.isPortrait = YES;
     MJWeakSelf
     if (@available(iOS 10.0, *)) {
         timer=[NSTimer scheduledTimerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
@@ -193,8 +195,9 @@ static KeyboardView *_instance;
     }
     [[NSRunLoop currentRunLoop]addTimer:timer forMode:NSRunLoopCommonModes];
     
-    [_instance setFrameWithPositionNormal:ccp(0, mainSizeH) anchorPoint:ccp(0, 1) size:ccsize(mainSizeW, 54+263+78+3)];
-    _instance.backgroundColor =HEXCOLORString(@"#313233");
+    
+    [_instance setFrameWithPositionNormal:ccp(0, mainSizeH) anchorPoint:ccp(0, 1) size:ccsize(mainSizeW, 398 - (self.isPortrait ? 0 : 100))];//54+263+78+3
+    _instance.backgroundColor = HEXCOLORString(@"#313233");
     [_instance addSubview:self.topview];
     [_instance addSubview:self.lefttab];
     [_instance addSubview:self.righttab];
@@ -202,6 +205,33 @@ static KeyboardView *_instance;
    
     _selectinx=0;
     _selectsub=-1;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didChangeOrientation:)
+                                                 name:UIDeviceOrientationDidChangeNotification
+                                               object:nil];
+}
+
+- (void)didChangeOrientation:(NSNotification *)notification {
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    if (orientation == UIDeviceOrientationPortrait || orientation == UIDeviceOrientationPortraitUpsideDown) {
+        self.isPortrait = YES;
+    } else {
+        self.isPortrait = NO;
+    }
+    CGFloat height = [self viewHeight] - (self.isPortrait ? 0 : 100);
+    self.frame = CGRectMake(self.frame.origin.x, [UIScreen mainScreen].bounds.size.height - height, [UIScreen mainScreen].bounds.size.width, height);
+    self.lefttab.frame = CGRectMake(self.lefttab.frame.origin.x, self.lefttab.frame.origin.y, self.lefttab.frame.size.width, [self contentHeight]);
+    self.righttab.frame = CGRectMake(self.righttab.frame.origin.x, self.righttab.frame.origin.y, [UIScreen mainScreen].bounds.size.width - self.righttab.frame.origin.x, [self contentHeight]);
+    self.line.frame = CGRectMake(self.line.frame.origin.x, self.line.frame.origin.y, self.line.frame.size.width, [self contentHeight]);
+}
+
+- (CGFloat)viewHeight {
+    return 398;
+}
+
+- (CGFloat)contentHeight {
+    return 263 - (self.isPortrait ? 0 : 100);
 }
 
 -(void)close{
@@ -248,7 +278,7 @@ static KeyboardView *_instance;
         _lefttab.dataSource = self;
         _lefttab.showsVerticalScrollIndicator=NO;
         _lefttab.showsHorizontalScrollIndicator=NO;
-        [_lefttab setFrameWithPositionNormal:ccp(0, 54) anchorPoint:ccp(0, 0) size:ccsize(115, 263)];
+        [_lefttab setFrameWithPositionNormal:ccp(0, 54) anchorPoint:ccp(0, 0) size:ccsize(115, [self contentHeight])];
         [_lefttab setBackgroundColor:HEXCOLORString(@"#202020")];
         UIView*head=[UIView new];
         head.backgroundColor=HEXCOLORString(@"#202020");
@@ -269,7 +299,7 @@ static KeyboardView *_instance;
         _righttab.dataSource = self;
         _righttab.showsVerticalScrollIndicator=NO;
         _righttab.showsHorizontalScrollIndicator=NO;
-        [_righttab setFrameWithPositionNormal:ccp(116, 54) anchorPoint:ccp(0, 0) size:ccsize(mainSizeW-115-1, 263)];
+        [_righttab setFrameWithPositionNormal:ccp(116, 54) anchorPoint:ccp(0, 0) size:ccsize(mainSizeW-115-1, [self contentHeight])];
         [_righttab setBackgroundColor:HEXCOLORString(@"#202020")];
     }
     return _righttab;
@@ -278,7 +308,7 @@ static KeyboardView *_instance;
     if (!_line) {
         _line=[UIView new];
         _line.backgroundColor= HEXCOLORStringB(@"#D8D8D8", 0.1); 
-        [_line setFrameWithPositionNormal:ccp(115, 54) anchorPoint:ccp(0, 0) size:ccsize(1, 263)];
+        [_line setFrameWithPositionNormal:ccp(115, 54) anchorPoint:ccp(0, 0) size:ccsize(1, [self contentHeight])];
     }
     return _line;
 }

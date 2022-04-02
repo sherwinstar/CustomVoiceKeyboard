@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(KeyboardView*)shared;
 -(void)show;
 -(void)receivestopplay;
+- (CGFloat)viewHeight;
 @end
 
 NS_ASSUME_NONNULL_END
