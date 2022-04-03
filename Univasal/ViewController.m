@@ -8,9 +8,10 @@
 #import "ViewController.h"
 
 #import "KeyboardView.h"
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
 @property(nonatomic,strong)UIView *vi;
 @property(nonatomic,strong)UITextField *textField;
+@property(nonatomic,strong)KeyboardView *keyboardView;
 @end
 
 @implementation ViewController
@@ -38,11 +39,17 @@
 - (void)run {
      //[GenerateIDF generateIDFA];
   //  [self networkchangeIp];
-    KeyboardView* keyview=[KeyboardView shared];
-    [keyview initialize:NO];
-    [keyview show];
-    [self.view addSubview:keyview];
+    [_textField resignFirstResponder];
+    self.keyboardView = [KeyboardView shared];
+    [_keyboardView initialize:NO];
+    [_keyboardView show];
+    [self.view addSubview:_keyboardView];
 }
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [self.keyboardView removeFromSuperview];
+}
+
 - (UIView *)vi {
     if (!_vi) {
         _vi=[UIView new];
@@ -55,6 +62,7 @@
 - (UITextField *)textField {
     if (!_textField) {
         _textField = [[UITextField alloc] initWithFrame:CGRectMake(120, 350, 150, 44)];
+        _textField.delegate = self;
     }
     return _textField;
 }
