@@ -249,6 +249,7 @@ static KeyboardView *_instance;
     } else {
         self.isPortrait = NO;
     }
+    
     CGFloat height = [self viewHeight] - (self.isPortrait ? 0 : 100);
     self.frame = CGRectMake(self.frame.origin.x, [UIScreen mainScreen].bounds.size.height - height, [UIScreen mainScreen].bounds.size.width, height);
     self.topview.frame = CGRectMake(self.topview.frame.origin.x, self.topview.frame.origin.y, [UIScreen mainScreen].bounds.size.width, self.topview.frame.size.height);
@@ -294,11 +295,18 @@ static KeyboardView *_instance;
         lb.backgroundColor=[UIColor clearColor];
         UIButton* bn =[UIButton buttonWithType:UIButtonTypeCustom];
         [bn setImage:[UIImage imageNamed:@"closebtn"] forState:0];
+//        bn.tag = 10;
         [bn addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
         if (!self.isKeyboard) {
             [_topview addSubview:bn];
+            [bn setFrameWithPositionNormal:ccp(mainSizeW-18, 27) anchorPoint:ccp(1, 0.5) size:ccsize(14, 14)];
+            CGFloat right = mainSizeW - 14 - bn.frame.origin.x;
+            [bn autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
+            [bn autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:right];
+            [bn autoSetDimension:ALDimensionHeight toSize:14];
+            [bn autoSetDimension:ALDimensionWidth toSize:14];
         }
-        [bn setFrameWithPositionNormal:ccp(mainSizeW-18, 27) anchorPoint:ccp(1, 0.5) size:ccsize(14, 14)];
+        
     }
     return _topview;
 }
