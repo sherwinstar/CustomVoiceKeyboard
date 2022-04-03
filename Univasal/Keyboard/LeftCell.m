@@ -6,6 +6,7 @@
 //
 
 #import "LeftCell.h"
+#import "UIView+AutoLayout.h"
 @interface LeftCell()
 @property(nonatomic,strong)UIButton*playbn;
 @property(nonatomic,strong)UILabel*name;
@@ -55,6 +56,10 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self=[super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self.contentView addSubview:self.name];
+        [self.name autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
+        [self.name autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:self.name.frame.origin.x];
+        [self.name autoSetDimension:ALDimensionHeight toSize:self.name.frame.size.height];
+        [self.name autoSetDimension:ALDimensionWidth toSize:self.name.frame.size.width];
        // _name.userInteractionEnabled=YES;
         self.backgroundColor=[UIColor clearColor];
         MJWeakSelf

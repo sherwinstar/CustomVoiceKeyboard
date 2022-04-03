@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48D8FC2227F8C5AF00221953 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D8FC2027F8C5AF00221953 /* UIView+AutoLayout.m */; };
+		48D8FC2327F8C5AF00221953 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D8FC2027F8C5AF00221953 /* UIView+AutoLayout.m */; };
+		48D8FC2527F8CB0000221953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D8FC2427F8CB0000221953 /* Assets.xcassets */; };
+		48D8FC2627F8CB0000221953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D8FC2427F8CB0000221953 /* Assets.xcassets */; };
 		48E3CCB827F710470048CAB7 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CCB727F710470048CAB7 /* KeyboardViewController.m */; };
 		48E3CCBC27F710470048CAB7 /* VoiceKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 48E3CCB427F710470048CAB7 /* VoiceKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		48E3CD9227F7469F0048CAB7 /* voice_app.db in Resources */ = {isa = PBXBuildFile; fileRef = 48E3CD6F27F7469F0048CAB7 /* voice_app.db */; };
@@ -41,12 +45,10 @@
 		48E3CDAF27F7469F0048CAB7 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD8E27F7469F0048CAB7 /* FMResultSet.m */; };
 		48E3CDB027F7469F0048CAB7 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD9127F7469F0048CAB7 /* Player.m */; };
 		48E3CDB127F7469F0048CAB7 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CD9127F7469F0048CAB7 /* Player.m */; };
-		48E3CDB627F748A90048CAB7 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3CDB527F748A80048CAB7 /* UIView+AutoLayout.m */; };
 		855C96792769A41A0085853B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C96782769A41A0085853B /* AppDelegate.m */; };
 		855C967C2769A41A0085853B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C967B2769A41A0085853B /* SceneDelegate.m */; };
 		855C967F2769A41A0085853B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C967E2769A41A0085853B /* ViewController.m */; };
 		855C96822769A41B0085853B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855C96802769A41B0085853B /* Main.storyboard */; };
-		855C96842769A41E0085853B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 855C96832769A41E0085853B /* Assets.xcassets */; };
 		855C96872769A41E0085853B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855C96852769A41E0085853B /* LaunchScreen.storyboard */; };
 		855C968A2769A41E0085853B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C96892769A41E0085853B /* main.m */; };
 		855C96942769A41E0085853B /* UnivasalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855C96932769A41E0085853B /* UnivasalTests.m */; };
@@ -93,6 +95,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		48D8FC2027F8C5AF00221953 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		48D8FC2127F8C5AF00221953 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		48D8FC2427F8CB0000221953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48E3CCB427F710470048CAB7 /* VoiceKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VoiceKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E3CCB627F710470048CAB7 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		48E3CCB727F710470048CAB7 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
@@ -131,8 +136,6 @@
 		48E3CD9127F7469F0048CAB7 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		48E3CDB227F746C20048CAB7 /* PrefixHeader_Txy.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_Txy.pch; sourceTree = "<group>"; };
 		48E3CDB327F746F30048CAB7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		48E3CDB427F748A80048CAB7 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
-		48E3CDB527F748A80048CAB7 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		855C96742769A41A0085853B /* Univasal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Univasal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		855C96772769A41A0085853B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		855C96782769A41A0085853B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,7 +144,6 @@
 		855C967D2769A41A0085853B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		855C967E2769A41A0085853B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		855C96812769A41B0085853B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		855C96832769A41E0085853B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		855C96862769A41E0085853B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		855C96882769A41E0085853B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		855C96892769A41E0085853B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -190,8 +192,8 @@
 				48E3CD6E27F7469F0048CAB7 /* Keyboard */,
 				48E3CCB627F710470048CAB7 /* KeyboardViewController.h */,
 				48E3CCB727F710470048CAB7 /* KeyboardViewController.m */,
-				48E3CDB427F748A80048CAB7 /* UIView+AutoLayout.h */,
-				48E3CDB527F748A80048CAB7 /* UIView+AutoLayout.m */,
+				48D8FC2127F8C5AF00221953 /* UIView+AutoLayout.h */,
+				48D8FC2027F8C5AF00221953 /* UIView+AutoLayout.m */,
 				48E3CDB327F746F30048CAB7 /* Constants.h */,
 				48E3CCB927F710470048CAB7 /* Info.plist */,
 			);
@@ -293,8 +295,8 @@
 				855C967B2769A41A0085853B /* SceneDelegate.m */,
 				855C967D2769A41A0085853B /* ViewController.h */,
 				855C967E2769A41A0085853B /* ViewController.m */,
+				48D8FC2427F8CB0000221953 /* Assets.xcassets */,
 				855C96802769A41B0085853B /* Main.storyboard */,
-				855C96832769A41E0085853B /* Assets.xcassets */,
 				855C96852769A41E0085853B /* LaunchScreen.storyboard */,
 				855C96882769A41E0085853B /* Info.plist */,
 				48E3CDB227F746C20048CAB7 /* PrefixHeader_Txy.pch */,
@@ -447,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E3CD9F27F7469F0048CAB7 /* Vehicle_DICT (1).db in Resources */,
+				48D8FC2627F8CB0000221953 /* Assets.xcassets in Resources */,
 				48E3CD9327F7469F0048CAB7 /* voice_app.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,10 +459,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				855C96872769A41E0085853B /* LaunchScreen.storyboard in Resources */,
-				855C96842769A41E0085853B /* Assets.xcassets in Resources */,
 				48E3CD9E27F7469F0048CAB7 /* Vehicle_DICT (1).db in Resources */,
 				48E3CD9227F7469F0048CAB7 /* voice_app.db in Resources */,
 				855C96822769A41B0085853B /* Main.storyboard in Resources */,
+				48D8FC2527F8CB0000221953 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +496,7 @@
 				48E3CDAB27F7469F0048CAB7 /* FMDatabase.m in Sources */,
 				48E3CCB827F710470048CAB7 /* KeyboardViewController.m in Sources */,
 				48E3CDA527F7469F0048CAB7 /* UIView+YXHelp.m in Sources */,
-				48E3CDB627F748A90048CAB7 /* UIView+AutoLayout.m in Sources */,
+				48D8FC2327F8C5AF00221953 /* UIView+AutoLayout.m in Sources */,
 				48E3CDA727F7469F0048CAB7 /* FMDatabaseQueue.m in Sources */,
 				48E3CD9B27F7469F0048CAB7 /* KeyboardView.m in Sources */,
 				48E3CDA927F7469F0048CAB7 /* FMDatabaseAdditions.m in Sources */,
@@ -519,6 +522,7 @@
 				855C96792769A41A0085853B /* AppDelegate.m in Sources */,
 				855C968A2769A41E0085853B /* main.m in Sources */,
 				48E3CD9A27F7469F0048CAB7 /* KeyboardView.m in Sources */,
+				48D8FC2227F8C5AF00221953 /* UIView+AutoLayout.m in Sources */,
 				48E3CDA227F7469F0048CAB7 /* UIColor+HXExtension.m in Sources */,
 				48E3CDAE27F7469F0048CAB7 /* FMResultSet.m in Sources */,
 				48E3CDAC27F7469F0048CAB7 /* FMDatabasePool.m in Sources */,
@@ -761,6 +765,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -789,6 +794,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

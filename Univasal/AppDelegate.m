@@ -16,16 +16,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//   NSString* st= [[NSBundle mainBundle]pathForResource:@"cert1" ofType:@"archiver"];
+   NSString* st= [[NSBundle mainBundle]pathForResource:@"cert1" ofType:@"archiver"];
 //  id   data = [NSData dataWithContentsOfFile:st];
 //    id json = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 //    id js=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-//    NSDictionary *dict = @{@"a": @1};
-//
-//      NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dict ];
-//
-//      NSDictionary *result = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-//    id re = [NSKeyedUnarchiver unarchiveObjectWithFile:st];
+    NSDictionary *dict = @{@"a": @1};
+
+      NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dict ];
+
+      NSDictionary *result = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    id re = [NSKeyedUnarchiver unarchiveObjectWithFile:st];
     
 
   //  2、将对象归档到指定的路径中
@@ -34,7 +34,7 @@
 
   //  3、将归档后的数据提取出来
 
-//  id ff=  [NSKeyedUnarchiver unarchiveObjectWithFile:st];
+  id ff=  [NSKeyedUnarchiver unarchiveObjectWithFile:st];
 
     return YES;
 }
@@ -56,5 +56,8 @@
 //    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 //}
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    return UIInterfaceOrientationMaskAll;//支持所有方向
+}
 
 @end

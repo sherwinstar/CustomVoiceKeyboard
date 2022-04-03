@@ -11,6 +11,8 @@
 #import "Player.h"
 #import "NetManager.h"
 #import "Database.h"
+#import "UIView+AutoLayout.h"
+
 @interface KeyboardView()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UIView* topview;
 @property(nonatomic,strong)UITableView*lefttab;
@@ -24,6 +26,7 @@
 @property(nonatomic,strong)NSArray* rightData;//右边文件列表
 @property(nonatomic,strong) NSString* delayurl;//存储延时播放的url;
 @property(nonatomic,assign) BOOL isPortrait;
+@property(nonatomic,assign) BOOL isKeyboard;
 @end
 @implementation KeyboardView
 
@@ -45,11 +48,16 @@ static KeyboardView *_instance;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
         _instance = [[KeyboardView alloc] init];
-        [_instance initUI];
-        [_instance database];
     });
     return _instance;
 }
+
+- (void)initialize:(BOOL)isKeyboard {
+    self.isKeyboard = isKeyboard;
+    [self initUI];
+    [self database];
+}
+
 - (void)show{
     [self requestapi];
 }
@@ -196,12 +204,34 @@ static KeyboardView *_instance;
     [[NSRunLoop currentRunLoop]addTimer:timer forMode:NSRunLoopCommonModes];
     
     
-    [_instance setFrameWithPositionNormal:ccp(0, mainSizeH) anchorPoint:ccp(0, 1) size:ccsize(mainSizeW, 398 - (self.isPortrait ? 0 : 100))];//54+263+78+3
-    _instance.backgroundColor = HEXCOLORString(@"#313233");
-    [_instance addSubview:self.topview];
-    [_instance addSubview:self.lefttab];
-    [_instance addSubview:self.righttab];
-    [_instance addSubview:self.line];
+    [self setFrameWithPositionNormal:ccp(0, mainSizeH) anchorPoint:ccp(0, 1) size:ccsize(mainSizeW, 398 - (self.isPortrait ? 0 : 100))];//54+263+78+3
+    self.backgroundColor = HEXCOLORString(@"#313233");
+    [self addSubview:self.topview];
+    [self addSubview:self.lefttab];
+    [self addSubview:self.righttab];
+    [self addSubview:self.line];
+    
+    if (self.isKeyboard) {
+        [self.topview autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:0];
+        [self.topview autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:0];
+        [self.topview autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:0];
+        [self.topview autoSetDimension:ALDimensionHeight toSize:54];
+        
+        [self.lefttab autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:0];
+        [self.lefttab autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.topview];
+        [self.lefttab autoSetDimension:ALDimensionHeight toSize:[self contentHeight]];
+        [self.lefttab autoSetDimension:ALDimensionWidth toSize:115];
+       
+        [self.line autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.topview];
+        [self.line autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:self.lefttab];
+        [self.line autoSetDimension:ALDimensionWidth toSize:1];
+        [self.line autoSetDimension:ALDimensionHeight toSize:115];
+        
+        [self.righttab autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.topview];
+        [self.righttab autoPinEdge:ALEdgeLeft toEdge:ALEdgeRight ofView:self.line];
+        [self.righttab autoSetDimension:ALDimensionHeight toSize:[self contentHeight]];
+        [self.righttab autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:0];
+    }
    
     _selectinx=0;
     _selectsub=-1;
@@ -221,6 +251,7 @@ static KeyboardView *_instance;
     }
     CGFloat height = [self viewHeight] - (self.isPortrait ? 0 : 100);
     self.frame = CGRectMake(self.frame.origin.x, [UIScreen mainScreen].bounds.size.height - height, [UIScreen mainScreen].bounds.size.width, height);
+    self.topview.frame = CGRectMake(self.topview.frame.origin.x, self.topview.frame.origin.y, [UIScreen mainScreen].bounds.size.width, self.topview.frame.size.height);
     self.lefttab.frame = CGRectMake(self.lefttab.frame.origin.x, self.lefttab.frame.origin.y, self.lefttab.frame.size.width, [self contentHeight]);
     self.righttab.frame = CGRectMake(self.righttab.frame.origin.x, self.righttab.frame.origin.y, [UIScreen mainScreen].bounds.size.width - self.righttab.frame.origin.x, [self contentHeight]);
     self.line.frame = CGRectMake(self.line.frame.origin.x, self.line.frame.origin.y, self.line.frame.size.width, [self contentHeight]);
@@ -264,7 +295,9 @@ static KeyboardView *_instance;
         UIButton* bn =[UIButton buttonWithType:UIButtonTypeCustom];
         [bn setImage:[UIImage imageNamed:@"closebtn"] forState:0];
         [bn addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
-        [_topview addSubview:bn];
+        if (!self.isKeyboard) {
+            [_topview addSubview:bn];
+        }
         [bn setFrameWithPositionNormal:ccp(mainSizeW-18, 27) anchorPoint:ccp(1, 0.5) size:ccsize(14, 14)];
     }
     return _topview;
@@ -293,6 +326,7 @@ static KeyboardView *_instance;
 - (UITableView *)righttab {
     if (!_righttab) {
         _righttab = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _righttab.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
         [_righttab registerClass:[KeyboardCell class] forCellReuseIdentifier:@"righttab"];
         _righttab.separatorStyle = UITableViewCellSeparatorStyleNone;
         _righttab.delegate = self;

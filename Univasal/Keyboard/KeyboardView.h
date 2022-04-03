@@ -10,7 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KeyboardView : UIView
+
 +(KeyboardView*)shared;
+- (void)initialize:(BOOL)isKeyboard;
 -(void)show;
 -(void)receivestopplay;
 - (CGFloat)viewHeight;

@@ -25,9 +25,11 @@
     [self.view addSubview:self.textField];
     self.textField.text = @"系统键盘";
     self.textField.backgroundColor = [UIColor redColor];
-  //  [self networkchangeIp];
+    
+    //  [self networkchangeIp];
     // Do any additional setup after loading the view.
 }
+
 - (void)teststr {
     NSString * str =@"1266";
     str = @"1iu2u2";
@@ -37,6 +39,7 @@
      //[GenerateIDF generateIDFA];
   //  [self networkchangeIp];
     KeyboardView* keyview=[KeyboardView shared];
+    [keyview initialize:NO];
     [keyview show];
     [self.view addSubview:keyview];
 }
@@ -55,6 +58,11 @@
     }
     return _textField;
 }
+
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
 
 @end
 

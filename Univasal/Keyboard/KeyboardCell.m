@@ -6,6 +6,8 @@
 //
 
 #import "KeyboardCell.h"
+#import "UIView+AutoLayout.h"
+
 @interface KeyboardCell()
 @property(nonatomic,strong)UIButton*playbn;
 @property(nonatomic,strong)UILabel*name;
@@ -75,7 +77,21 @@
         [self.contentView addSubview:self.playbn];
         [self.contentView addSubview:self.name];
         [self.contentView addSubview:self.send];
-        _name.userInteractionEnabled=YES;
+        
+        CGFloat right = mainSizeW - 116 - self.send.frame.origin.x - 44;
+        [self.send autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
+        [self.send autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:right];
+        [self.send autoSetDimension:ALDimensionHeight toSize:22];
+        [self.send autoSetDimension:ALDimensionWidth toSize:44];
+        [self.name autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
+        [self.name autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:self.name.frame.origin.x];
+        [self.name autoSetDimension:ALDimensionHeight toSize:self.name.frame.size.height];
+        [self.name autoSetDimension:ALDimensionWidth toSize:self.name.frame.size.width];
+        [self.playbn autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
+        [self.playbn autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:self.playbn.frame.origin.x];
+        [self.playbn autoSetDimension:ALDimensionHeight toSize:self.playbn.frame.size.height];
+        [self.playbn autoSetDimension:ALDimensionWidth toSize:self.playbn.frame.size.width];
+        _name.userInteractionEnabled = YES;
         self.backgroundColor=[UIColor clearColor];
         self.contentView.backgroundColor=[UIColor clearColor];
     }

@@ -10,7 +10,6 @@
 #import "UIView+AutoLayout.h"
 
 @interface KeyboardViewController ()
-@property (nonatomic, strong) UIButton *nextKeyboardButton;
 @end
 
 @implementation KeyboardViewController
@@ -24,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     KeyboardView* keyview = [KeyboardView shared];
+    [keyview initialize:YES];
     [keyview show];
     [self.view addSubview:keyview];
     [keyview autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:0];
@@ -35,7 +35,6 @@
 
 - (void)viewWillLayoutSubviews
 {
-    self.nextKeyboardButton.hidden = !self.needsInputModeSwitchKey;
     [super viewWillLayoutSubviews];
 }
 
@@ -52,7 +51,6 @@
     } else {
         textColor = [UIColor blackColor];
     }
-    [self.nextKeyboardButton setTitleColor:textColor forState:UIControlStateNormal];
 }
 
 @end
