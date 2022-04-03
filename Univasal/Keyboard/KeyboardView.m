@@ -386,9 +386,8 @@ static KeyboardView *_instance;
           LeftCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
           if (cell == nil) {
               cell = [[LeftCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-              cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            //  cell.backgroundColor = [UIColor whiteColor];
           }
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         MJWeakSelf
         __weak typeof(tableView)weaktaab=tableView;
         [cell setBlock:^(id param) {
@@ -408,9 +407,8 @@ static KeyboardView *_instance;
           KeyboardCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
           if (cell == nil) {
               cell = [[KeyboardCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-              cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            //  cell.backgroundColor = [UIColor whiteColor];
           }
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         MJWeakSelf
         __weak typeof(tableView)weaktaab=tableView;
         [cell setBlock:^(id param) {
