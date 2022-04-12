@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //HEXCOLORString(@"#0x000000");
-    
+    [self copyDB];
     self.vi.backgroundColor =GradientCOLOR(CGSizeMake(200, 200), 1, HEXCOLORStringB(@"BC8F8F", 1.0), [UIColor blueColor]);//NewCOLOR([UIColor blueColor], 1, [UIColor greenColor]);
     [self.vi addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(run)]];
     [self.view addSubview:self.vi];
@@ -44,6 +44,20 @@
     [_keyboardView initialize:NO];
     [_keyboardView show];
     [self.view addSubview:_keyboardView];
+}
+
+- (void)copyDB {
+    NSFileManager *fileManager =[NSFileManager defaultManager];
+    NSURL *groupUrl = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.linhua.Univasal"];
+    NSError *error;
+    NSString *directory = groupUrl.path;
+
+    NSString *dbPath =[directory stringByAppendingPathComponent:@"voice_app.db"];
+
+    if([fileManager fileExistsAtPath:dbPath]== NO){
+        NSString *resourcePath =[[NSBundle mainBundle] pathForResource:@"voice_app" ofType:@"db"];
+        [fileManager copyItemAtPath:resourcePath toPath:dbPath error:&error];
+    }
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {

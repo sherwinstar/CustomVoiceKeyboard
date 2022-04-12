@@ -95,6 +95,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		48873BDE2805DDE90086FE4D /* Univasal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Univasal.entitlements; sourceTree = "<group>"; };
+		48873BDF2805DE500086FE4D /* VoiceKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceKeyboard.entitlements; sourceTree = "<group>"; };
 		48D8FC2027F8C5AF00221953 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		48D8FC2127F8C5AF00221953 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		48D8FC2427F8CB0000221953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		48E3CCB527F710470048CAB7 /* VoiceKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				48873BDF2805DE500086FE4D /* VoiceKeyboard.entitlements */,
 				48E3CD6E27F7469F0048CAB7 /* Keyboard */,
 				48E3CCB627F710470048CAB7 /* KeyboardViewController.h */,
 				48E3CCB727F710470048CAB7 /* KeyboardViewController.m */,
@@ -289,6 +292,7 @@
 		855C96762769A41A0085853B /* Univasal */ = {
 			isa = PBXGroup;
 			children = (
+				48873BDE2805DDE90086FE4D /* Univasal.entitlements */,
 				855C96772769A41A0085853B /* AppDelegate.h */,
 				855C96782769A41A0085853B /* AppDelegate.m */,
 				855C967A2769A41A0085853B /* SceneDelegate.h */,
@@ -592,6 +596,7 @@
 		48E3CCBE27F710470048CAB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VoiceKeyboard/VoiceKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHQ7UZVNQZ;
@@ -617,6 +622,7 @@
 		48E3CCBF27F710470048CAB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VoiceKeyboard/VoiceKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHQ7UZVNQZ;
@@ -756,6 +762,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Univasal/Univasal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHQ7UZVNQZ;
@@ -786,6 +793,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Univasal/Univasal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHQ7UZVNQZ;
